@@ -6,4 +6,8 @@ public class NavigateToNextScene : MonoBehaviour{
   public void NextScene(){
     SceneManager.LoadScene(nextScene);
   }
+
+  public void Test(){
+    Debug.Log("Hello");
+  }
 }
