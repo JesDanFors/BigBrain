@@ -21,6 +21,10 @@ public class ChangeTheme : MonoBehaviour{
     public Sprite comicClasses;
     public Sprite comicTitle;
     public Sprite comicTime;
+
+    public void Test(){
+        Debug.Log("Test test");
+    }
     
     public void ChangeThemeFunction(){
         if (changed){
