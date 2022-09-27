@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class ChangeTheme : MonoBehaviour{
     private bool changed = true;
@@ -21,6 +20,8 @@ public class ChangeTheme : MonoBehaviour{
     public Sprite comicClasses;
     public Sprite comicTitle;
     public Sprite comicTime;
+
+    public Sprite secondAvatar;
 
     public void Test(){
         Debug.Log("Test test");
@@ -43,5 +44,9 @@ public class ChangeTheme : MonoBehaviour{
             time.sprite = cleanTime;
             changed = true;
         }
+    }
+
+    public void ChangeAvatar(){
+        background.sprite = secondAvatar;
     }
 }
